@@ -1,10 +1,13 @@
 def fizzbuzz(number)
-  case 
+  case
+  when number % 15 == 0
+    "fizzbuzz"
   when number % 3 == 0
     'fizz'
   when number % 5 == 0
     'buzz'
-  when 4
-    '4'
+
+  else
+    number.to_s
   end
 end

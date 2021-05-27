@@ -23,6 +23,21 @@ describe 'fizzbuzz' do
   it 'returns "fizzbuzz" when passed 15' do
     expect(fizzbuzz(15)).to eq "fizzbuzz"
   end
+
+  it 'returns fizzbuzz sequence' do
+    expected_values = {
+      '3': 'fizz',
+      '4': "4",
+      '5': "buzz",
+      '6': "fizz",
+      '7': "7",
+      '9': "fizz",
+      '15': "fizzbuzz"
+    }
+    expected_values.each do |input, result|
+      expect(fizzbuzz(input.to_s.to_i)).to eq result
+    end
+  end
 end
 # RSpec.describe "#answer" do
 #   expected_values = {'3': 'Fizz', '5': 'Buzz', '6': 'Fizz', '11': '11', '15': 'FizzBuzz'}
