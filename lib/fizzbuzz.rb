@@ -1,6 +1,6 @@
 def fizzbuzz(number)
-  case number
-  when 3
+  case 
+  when number % 3 == 0
     'fizz'
   when 4
     '4'
