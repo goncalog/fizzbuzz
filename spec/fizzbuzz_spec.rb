@@ -19,6 +19,10 @@ describe 'fizzbuzz' do
       expect(fizzbuzz(num)).to eq "buzz"
     end
   end
+
+  it 'returns "fizzbuzz" when passed 15' do
+    expect(fizzbuzz(15)).to eq "fizzbuzz"
+  end
 end
 # RSpec.describe "#answer" do
 #   expected_values = {'3': 'Fizz', '5': 'Buzz', '6': 'Fizz', '11': '11', '15': 'FizzBuzz'}
